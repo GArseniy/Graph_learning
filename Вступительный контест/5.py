@@ -18,6 +18,7 @@ def rec(number):
     return result
 
 
-n = int(input("N = "))
+n = int(input())
 arr = rec(n)
-print(*arr, sep='\n')
+for i in range(len(arr)):
+    print(*(arr[len(arr) - i - 1]))
